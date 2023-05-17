@@ -22,10 +22,20 @@ a {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1280px;
     width: 90%;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     margin: auto
+}
+
+section {
+    padding: 3rem 0 2rem;
+}
+
+.title {
+    font-size: 2.4rem;
+    font-weight: 500;
+
 }
 
 nav {
@@ -177,4 +187,258 @@ nav {
 
     color: #fff;
     font-size: 18px;
+}
+
+/* exclusive */
+
+.ex-container {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+    gap: 2rem;
+}
+
+.ex-container-single {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ex-container-single::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 20%));
+}
+
+.ex-container-single img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.ex-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 90%;
+    text-align: center;
+}
+
+.ex-details h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.ex-details span {
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.trending-container {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 2rem;
+}
+
+
+.trending-single img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.img-cap {
+    font-size: 1.1rem;
+    margin-top: .5rem;
+}
+
+.ad {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ad::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 5%));
+    z-index: 2;
+}
+
+.ad img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ad-txts {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    width: 30%;
+    transform: translateY(-50%);
+    color: #fff;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.ad-txts h2 {
+    font-size: 2.9rem;
+    line-height: 3.3rem;
+    font-weight: 400;
+}
+
+.ad-txts p {
+    font-weight: 500;
+}
+
+.ad-txts button {
+    background: #e7591c;
+    color: #fff;
+    font-family: inherit;
+    padding: .6rem 1.2rem;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: .9rem;
+}
+
+.ad-txts button:hover,
+.btn-make-money:hover {
+    background: #f78f63;
+
+}
+
+.stories-container {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.8rem;
+}
+
+.story-single {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.story-single::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 20%), rgba(255,
+                255,
+                255, 0.1));
+    z-index: 1;
+}
+
+.story-single img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.story-title {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    /* background: #da080849; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    z-index: 5;
+}
+
+.btn-make-money {
+    background: #e7591c;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    width: 20%;
+    text-align: center;
+    margin: 1rem auto 2rem;
+    display: block;
+    padding: 1rem 0;
+    border-radius: 26px;
+    font-size: .9rem;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.about {
+    color: #656;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 1.9rem;
+}
+
+.about-txt {
+    text-align: center;
+}
+
+.footer {
+    margin: 4rem 0 1rem;
+}
+
+.icons {
+    text-align: center;
+    margin-bottom: 1.6rem;
+
+}
+
+.icons i {
+    margin-left: .8rem;
+    font-size: 23px;
+    color: #555;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.icons a:hover i {
+    color: #8b8585;
+}
+
+.footer hr {
+    border: 0;
+    height: 1px;
+    background: #e8d9d9;
+}
+
+.footer-txt {
+    text-align: center;
+    padding: .8rem 0 0rem;
+}
+
+.about {
+    padding-bottom: 0;
 }
